@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    max-width: 50%;
+    align-content: center;
+}
+
+h1 {
+    align-self: center;
+}
+
+a {
+    color: blueviolet;
+}
+
+.swot {
+    border: black;
+    border-style: dashed;
+}
+
+p {
+    margin: 5px;
+}
+
+.specialp {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hiddenel {
+    display: none;
+}
