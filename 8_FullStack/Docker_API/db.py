@@ -10,7 +10,7 @@ def create_db():
 
         df = pd.read_csv("students.csv")
 
-        df.to_sql("students", conn, if_exists='repalce')
+        df.to_sql("students", conn, if_exists='replace')
 
         conn.close()
         return 0
@@ -38,7 +38,7 @@ def get_name(email):
         engine = create_engine("sqlite:///student.db")
         conn = engine.connect()
 
-        df = pd.read_sql_query("SELECT name FROM students WHERE email = '{}".format(email), conn)
+        df = pd.read_sql_query("SELECT name FROM students WHERE email = '{}'".format(email), conn)
 
         conn.close()
         return df.to_dict()
